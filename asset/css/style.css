@@ -122,13 +122,31 @@ p{
 
 /* Section 3
  * --------------------------------------- */
-#section2{
-	background-color: #771423;
+
+#section2 {
+	background: url(../img/seo-min-3.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
+
 #section2 h1{
 	color: #F2F2F2;
 }
 #section2 p{
+	opacity: 0.6;
+}
+
+/* Section 4
+ * --------------------------------------- */
+#section3{
+	background-color: #771423;
+}
+#section3 h1{
+	color: #F2F2F2;
+}
+#section3 p{
 	opacity: 0.6;
 }
 
@@ -201,7 +219,7 @@ p{
 		box-sizing:border-box;
 		}
 #menu ul li{display:inline-table;
-			width:32%;
+			width:24%;
 			height:100%;
 			box-sizing:border-box;
 			text-align:center;}
