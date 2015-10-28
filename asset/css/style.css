@@ -90,17 +90,10 @@ p{
 }
 #section0 h1{
 	color: #FFF;
-	font-size: 45pt;
 }
 #section0 p{
 	color: #333;
 	opacity: 0.6;
-}
-
-#section0 .Box {
-
-	width: 20%;
-	display: inline-block;
 }
 
 
@@ -111,11 +104,21 @@ p{
 }
 #section1 h1{
 	color: #fff;
+	font-size: 45pt;
+	border-bottom: 1px solid #053144;
 }
 #section1 p{
 	opacity: 0.8;
+	font-size: 22pt;
 }
 
+#section1 .box {
+
+	width: 25%;
+	display: inline-block;
+	border: 1px solid #074C6A;
+	margin: 0px 5px;
+}
 
 /* Section 3
  * --------------------------------------- */
