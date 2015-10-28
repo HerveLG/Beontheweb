@@ -167,8 +167,10 @@ p{
 	padding:10px 20px;
 	width:45%;
 	box-sizing:border-box;
-	
 	}
+.divForm form p input:focus + .divForm form p{
+	opacity:1;
+}
 .divForm form p textarea{margin-top: 5px;
 						height:100px;}
 #menu{position:fixed;
@@ -194,7 +196,7 @@ p{
 		box-sizing:border-box;
 		}
 #menu ul li{display:inline-table;
-			width:33%;
+			width:32%;
 			height:100%;
 			box-sizing:border-box;
 			text-align:center;}
