@@ -1,0 +1,209 @@
+/* Reset CSS
+ * --------------------------------------- */
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: tcm;
+    src: url(../fonts/TCM.ttf);
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration:none;
+	font-family: 'News Cycle';
+}
+table {
+	border-spacing: 0;
+}
+fieldset,img {
+	border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+caption,th {
+	text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-size: 100%;
+	margin:0;
+	padding:0;
+	color:#444;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #F2F2F2;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.content{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+/* Section 1
+ * --------------------------------------- */
+#section0{
+	background: url(../img/seo-min.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#section0 h1{
+	color: #FFF;
+}
+#section0 p{
+	color: #333;
+	opacity: 0.6;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+#section1{
+	background-color: #2EBE21;
+}
+#section1 h1{
+	color: #fff;
+}
+#section1 p{
+	opacity: 0.8;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+#section2{
+	background-color: #2C3E50;
+}
+#section2 h1{
+	color: #F2F2F2;
+}
+#section2 p{
+	opacity: 0.6;
+}
+
+
+/* Bouton */
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: white;
+	background: #357AB7;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity:0.6;
+}
+.btn:hover {opacity:1;}
+
+.divForm{width:70%;
+		margin:0px auto;}
+.divForm form{text-align:left;}
+.divForm form p label {
+				width: 50%;
+				display: inline-block;}
+.divForm form p input,
+.divForm form p select,
+.divForm form p textarea{
+	padding:10px 20px;
+	width:45%;
+	box-sizing:border-box;
+	
+	}
+.divForm form p textarea{margin-top: 5px;
+						height:100px;}
+#menu{position:fixed;
+		top:0px;
+		z-index:10;
+		width:100%;
+		background-color:rgba(0,0,0,0.85);
+		height:80px}
+#menu #logo{
+			height:100%;
+			float:left;}
+#menu #logo a{height:100%;
+				float:left;
+				padding: 20px 80px;
+				box-sizing: border-box;}
+#menu #logo img{width:auto;
+				height:100%;
+				}
+#menu ul{width:50%;
+		height: 100%;
+		text-align:center;
+		float:right;
+		box-sizing:border-box;
+		}
+#menu ul li{display:inline-table;
+			width:33%;
+			height:100%;
+			box-sizing:border-box;
+			text-align:center;}
+#menu ul li a{width: 100%;
+			height: 100%;
+			display: table-cell;
+			padding: 10px 20px;
+			box-sizing:border-box;
+			color:white;
+			transition: all 200ms linear;
+			font-size:16px;
+			vertical-align:middle;}
+#menu ul li a:hover,
+#menu ul li a.activate{
+	background-color:rgba(0,0,0,0.95);
+
+}
+
+#menu ul li ul{display: none;}
