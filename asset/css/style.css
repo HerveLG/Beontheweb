@@ -164,6 +164,8 @@ p{
 .divForm form p label {
 				width: 50%;
 				display: inline-block;}
+.divForm form p.submitButton{text-align:center}
+.divForm .submitButton:hover{opacity:1;}
 .divForm form p input,
 .divForm form p select,
 .divForm form p textarea{
