@@ -55,26 +55,31 @@
 		<div class="content">
 			<div class='divForm'>
 				<form id="form" action="/" method="post">
-					<p>
-						<label for='name'>Votre nom et prénom</label>
-						<input type='name' name='name' placeholder='Jean dupond' required />
-					</p>
-					<p>
-						<label for='email'>Votre Email</label>
-						<input type='email' name='email' placeholder='you@yourdomain.com' required />
-					</p>
-					<p>
-						<label for='type'>Vous souhaitez</label>
-						<select name="type">
-							<option value="info">Information</option>
-							<option value="info">Conseil</option>
-							<option value="devis">Devis</option>
-						</select>
-					</p>
-					<p>
-						<label for='content'>Votre texte</label>
-						<textarea name='content'></textarea>
-					</p>
+					<fieldset>
+						<p>
+							<label for='name'>Votre nom et prénom</label>
+							<input type='name' name='name' placeholder='Jean dupond' required />
+						</p>
+						<p>
+							<label for='email'>Votre Email</label>
+							<input type='email' name='email' placeholder='you@yourdomain.com' required />
+						</p>
+						<p>
+							<label for='type'>Vous souhaitez</label>
+							<select name="type">
+								<option value="info">Information</option>
+								<option value="info">Conseil</option>
+								<option value="devis">Devis</option>
+							</select>
+						</p>
+						<p>
+							<label for='content'>Votre texte</label>
+							<textarea name='content'></textarea>
+						</p>
+						<p class='submitButton'>
+							<input type="submit" value="Envoyer" name="submit"/>
+						</p>
+					</fieldset>
 				</form>
 			</div>
 		</div>
