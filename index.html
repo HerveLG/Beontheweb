@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="cmsCom">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body ng-controller="MainCtrl">
 
 <div id="menu">
 	<div id="logo">
@@ -40,6 +40,7 @@
 </div>
 
 <div id="fullpage">
+<<<<<<< HEAD
 	<div class="section " id="section0">
 		<div class="content">
 			<h1>Créez votre univers digital !</h1>
@@ -121,16 +122,28 @@
 			</div>
 		</div>
 	</div>
+=======
+	<!-- Load in JS -->
+	<section class="section" id="section0" ></section>
+	<section class="section" id="section1" ></section>
+	<section class="section" id="section2" ></section>
+	<section class="section" id="section3" ></section>
+	
+>>>>>>> refs/remotes/origin/master
 </div>
 
 <script type="text/javascript" src="asset/js/javascript.fullPage.js"></script>
+<script type="text/javascript" src="asset/js/script.js"></script>
 <script type="text/javascript">
 	fullpage.initialize('#fullpage', {
 		anchors: ['Accueil', 'Avantages', 'Nous', 'Contact'],
 		menu: '#menu',
 		css3:true
-	});
+	}); 
+	loadPage('views/accueil.html'	, 'section0');
+	loadPage('views/avantages.html'	, 'section1');
+	loadPage('views/nous.html'		, 'section2');
+	loadPage('views/contact.html'	, 'section3');
 </script>
-<script type="text/javascript" src="asset/js/script.js"></script>
 </body>
 </html>
