@@ -41,3 +41,22 @@ function eventOnWebSite(){
 function myFocusFunction(event){
 	event.target.parentElement.style.opacity = "1";
 }
+
+function loadPage(href, idDiv){
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", href, true);
+	xmlhttp.onload = function (e) {
+	  if (xmlhttp.readyState === 4) {
+		if (xmlhttp.status !== 200) {
+		  console.error(xmlhttp.statusText);
+		}
+	  }
+	};
+	xmlhttp.onerror = function (e) {
+	  console.error(xmlhttp.statusText);
+	};
+	xmlhttp.send(null)
+	xmlhttp.onloadend=function(){
+		document.getElementById(idDiv).innerHTML = xmlhttp.responseText;
+    }
+}
