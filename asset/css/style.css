@@ -22,7 +22,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 a{
 	text-decoration:none;
-	font-family: 'News Cycle';
+	font-family: 'Open Sans';
 }
 table {
 	border-spacing: 0;
@@ -89,7 +89,7 @@ p{
 	background-size: cover;
 }
 #section0 h1{
-	color: #FFF;
+	color: #000;
 }
 #section0 p{
 	color: #333;
